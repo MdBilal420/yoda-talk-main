@@ -48,6 +48,7 @@ button {
   font-family: inherit;
   color: var(--text-color);
   text-align: center;
+  size: 50%;
 }
 
 footer {

@@ -9,8 +9,14 @@ function getUrl(input){
 }
 
 function errorHandler(error){
-    alert('error or request limit exceeded')
-    console.log('error or request limit exceeded')
+    //alert('error or request limit exceeded')
+    if(error instanceof TypeError){
+        alert('requests limit exceeded.Try after sometime.');
+    }
+    else{
+        alert('error');
+    }
+    
 }
 
 
